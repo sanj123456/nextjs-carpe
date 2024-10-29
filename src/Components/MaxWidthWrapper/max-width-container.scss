@@ -1,0 +1,8 @@
+@import "../../assets/style/variable.scss";
+.max-width-container{
+    
+    .max-width{
+        max-width: $max-container-width;
+        margin: 0 auto;
+    }
+}

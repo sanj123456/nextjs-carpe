@@ -1,0 +1,136 @@
+@import "../../assets/style/mixin.scss";
+.swiperBtn {
+  padding: 1rem 1.2rem;
+  display: flex;
+  border: none;
+  background-color: #142254;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+// style={{
+//   position: 'absolute',
+//   // right: "20px",
+//   right: "-5%",
+//   // right: "-46px",
+//   zIndex: 9
+// }}
+.swiper-btn-right{
+position: absolute;
+right: -5%;
+z-index: 9;
+@include tablet{
+  right: -2%;
+}
+}
+.swiper-btn-left{
+  position: absolute;
+left: -5%;
+z-index: 9;
+@include tablet{
+  left: -2%;
+}
+}
+.outer-conatiner {
+  // if you want chang button position , do changes here
+  position: relative;
+  // padding: 0 51px;
+  @include tablet {
+    padding: 10px;
+  }
+  @include mobile {
+    // padding:  unset;
+    padding: 10px;
+  }
+}
+.card-wrapper {
+  padding: 2rem 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  @include mobile {
+    padding: 1rem;
+  }
+}
+// .card-wrapper {
+//   // border: 2px solid black;
+//   // max-width: 400px;
+//   // margin-right: 25px;
+//   // padding-left: 58px;
+//   // padding-right: 58px;
+//   padding: 2rem 0;
+//   padding-left: 8px;
+//   padding-right: 8px;
+//   .react-multiple-carousel__arrow--right {
+//     right: calc(0%) !important;
+//   }
+//   @include desktopxtralarge {
+//     max-width: 100%;
+//   }
+//   @include mobile {
+//     margin-right: unset;
+//     padding-bottom: 26px !important;
+//     padding-left: 2px !important;
+//     padding-right: 2px !important;
+//   }
+//   .card-image {
+//     width: 100%;
+//   }
+
+//   .heading {
+//     margin-top: 22px;
+//     font-size: 22px;
+//     font-weight: 600;
+//     line-height: 26.63px;
+//     text-align: left;
+//     color: #142254;
+//   }
+//   .heading-description {
+//     margin-top: 16px;
+//     font-size: 14px;
+//     font-weight: 400;
+//     line-height: 22px;
+//     text-align: left;
+//     color: #6d6d6d;
+//   }
+//   .read-more-btn {
+//     margin-top: 20px;
+//     width: auto;
+//     padding: 10px 20px 10px 20px;
+//     border-radius: 8px;
+//     border: none;
+//     cursor: pointer;
+//     background: #142254;
+//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+//     transition: all 0.3s ease;
+//     text-transform: capitalize;
+//     font-size: 16px;
+//     color: white;
+//     font-weight: 600;
+//     line-height: 19.36px;
+//     letter-spacing: 0.5px;
+//   }
+// }
+// .custom-dot-list-style{
+//     color: blue !important;
+// }
+.react-multi-carousel-dot.react-multi-carousel-dot--active button {
+  background: #142254 !important;
+}
+.react-multi-carousel-dot.react-multi-carousel-dot button {
+  border: none !important;
+}
+
+.react-multiple-carousel__arrow--right {
+  right: calc(0%) !important;
+  top: 37% !important;
+}
+.react-multiple-carousel__arrow--left {
+  left: calc(0%) !important;
+  top: 37% !important;
+}
+
+.react-multi-carousel-list {
+  position: static !important;
+}

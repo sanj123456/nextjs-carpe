@@ -1,0 +1,222 @@
+@import "../../assets/style/mixin.scss";
+@import "../../assets/style/variable.scss";
+
+.FAQsection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin: 0px 150px 100px;
+  flex-direction: row;
+  @include desktoplargescreen {
+    margin: 0px 0px 100px;
+  }
+  @include till-desktop {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @include tablet {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0px 40px 100px;
+  }
+  @include mobile {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin: 0px 10px 40px;
+  }
+  .img-faq {
+    height: 555px;
+    // max-width: 555px;
+    @include till-desktop {
+      order: 1;
+    }
+    @include mobile {
+      height: 360px;
+      order: 1;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 10px;
+    }
+  }
+  .faq-que-ans {
+    @include till-desktop {
+      order: 2;
+    }
+
+    .faq-wrapper {
+      max-height: 427px;
+      overflow-y: auto;
+
+      @include midmobile {
+        max-height: unset;
+      }
+      .question-wrapper {
+        width: 100%;
+        // max-width: 896px;
+        // margin: 0 auto;
+
+        padding: 4px 20px;
+        color: $theme-heading;
+        border-radius: 8px;
+        // margin-bottom: 10px;
+        margin-top: 10px;
+        background: #56c5d0;
+
+        .question {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          // font-family: $font-circular-regular;
+          @include poppins-font(600, 14px, 22px);
+          cursor: pointer;
+          // gap: 0.5rem;
+          // margin-bottom: 6px;
+          .item-questions {
+            width: 93%;
+            font-weight: 600;
+            // color: $theme-heading;
+            font-size: 14px;
+          }
+          > h3 {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 22px;
+            cursor: pointer;
+          }
+          .button {
+            border: none;
+            cursor: pointer;
+            background-color: transparent !important;
+            width: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.4s ease;
+            aspect-ratio: 1/1;
+
+            .faqarrow {
+              height: unset;
+              width: unset;
+              rotate: 360deg;
+            }
+            .faqarrowactive {
+              height: unset;
+              width: unset;
+              //   filter: brightness(0) saturate(100%) invert(99%) sepia(3%) saturate(2154%)
+              //     hue-rotate(214deg) brightness(115%) contrast(100%);
+              rotate: 90deg;
+            }
+          }
+
+          .button.active {
+            color: $White-color;
+            animation: rotate 0.4s;
+            animation-fill-mode: forwards;
+            color: $theme-heading;
+          }
+          button:focus {
+            outline: none;
+          }
+        }
+      }
+      .answer {
+        display: none;
+      }
+
+      .answer.active {
+        display: block;
+        text-align: left;
+        // max-width: 715px;
+        animation: slidein 0.4s;
+        animation-fill-mode: both;
+        // font-family: $font-circular-regular;
+        // @include poppins-font(400, 14px, 22px);
+        margin-bottom: 10px;
+        padding: 0 10px;
+      }
+    }
+    .question-container {
+      // text-align: center;
+      .faq-heading {
+        //   font-family: $font-circular-bold;
+        @include poppins-font(600, 32px, 42px);
+        color: $theme-heading;
+        margin-top: 27px;
+        @include mobile {
+          @include poppins-font(600, 22px, 27px);
+        }
+      }
+      p {
+        @include poppins-font(400, 14px, 22px);
+        margin-top: 10px;
+        margin-bottom: 17px;
+        color: #6d6d6d;
+        @include mobile {
+          margin-bottom: 15px;
+        }
+      }
+    }
+    .faq-footer-btn {
+      @include mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .contact-us-btn {
+        padding: 11px 18px !important;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  @keyframes slidein {
+    from {
+      opacity: 0.3;
+      transform: translateY(-20%);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  @keyframes rotate {
+    from {
+      rotate: 0deg;
+    }
+
+    to {
+      rotate: 90deg;
+    }
+  }
+}
+
+.faq-wrapper::-webkit-scrollbar {
+  display: unset !important;
+  ::-webkit-scrollbar {
+    margin-left: 51px !important;
+  }
+}
+.faq-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+  margin-left: 51px !important;
+}
+
+.faq-wrapper::-webkit-scrollbar-thumb {
+  background: #bebcbc; /* Thumb color */
+  // bebcbc
+  border-radius: 4px; /* Rounded corners */
+}
+
+.faq-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #f6f3f3; /* Thumb color on hover */
+}
+.faq-wrapper::-webkit-scrollbar {
+  width: 6px; /* Width of the vertical scrollbar */
+  height: 6px !important; /* Height of the horizontal scrollbar */
+}

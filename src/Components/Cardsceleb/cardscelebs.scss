@@ -1,0 +1,302 @@
+@import "../../assets/style/mixin.scss";
+.main-cele-div {
+  height: 430px;
+  background-color: gray;
+  border-radius: 8px;
+  position: relative;
+  .cardceleb-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    //   max-width: 100%;
+    height: 430px;
+    margin-right: 20px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 44.28%, #000000 100%),
+      gray url("../../../public/client1.svg");
+    // background: url("../../../public/avtar.svg");
+    background-position: top;
+    // background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    .cardceleb-name {
+      margin-top: 50px;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 26.63px;
+      text-align: left;
+      color: #fff;
+    }
+    .cardceleb-desc {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: left;
+      color: #fff;
+      min-height: 88px;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      @include midmobile {
+        min-height: 0px;
+      }
+    }
+  }
+}
+.main-cele-div {
+  height: 430px;
+  background-color: gray;
+  border-radius: 8px;
+  position: relative;
+  .cardceleb-div-2 {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    //   max-width: 100%;
+    height: 430px;
+    margin-right: 20px;
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0) 44.28%, #000000 100%),
+      gray url("../../../public/client2.svg");
+    background-position: top;
+    // background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .cardceleb-name {
+      margin-top: 50px;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 26.63px;
+      text-align: left;
+      color: #fff;
+    }
+    .cardceleb-desc {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: left;
+      color: #fff;
+      min-height: 88px;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      @include midmobile {
+        min-height: 0px;
+      }
+    }
+  }
+}
+.main-cele-div {
+  height: 430px;
+  background-color: gray;
+  border-radius: 8px;
+  position: relative;
+  .cardceleb-div-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    width: 100%;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 0;
+    //   max-width: 100%;
+    height: 430px;
+    margin-right: 20px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 44.28%, #000000 100%),
+      gray url("../../../public/client3.svg");
+    background-position: top;
+    // background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .cardceleb-name {
+      margin-top: 50px;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 26.63px;
+      text-align: left;
+      color: #fff;
+    }
+    .cardceleb-desc {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: left;
+      color: #fff;
+      min-height: 88px;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      @include midmobile {
+        min-height: 0px;
+      }
+    }
+  }
+}
+.main-cele-div {
+  height: 430px;
+  background-color: gray;
+  border-radius: 8px;
+  position: relative;
+  .cardceleb-div-4 {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    //   max-width: 100%;
+    height: 430px;
+    margin-right: 20px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 44.28%, #000000 100%),
+      gray url("../../../public/client4.svg");
+    background-position: top;
+    // background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .cardceleb-name {
+      margin-top: 50px;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 26.63px;
+      text-align: left;
+      color: #fff;
+    }
+    .cardceleb-desc {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: left;
+      color: #fff;
+      min-height: 88px;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      @include midmobile {
+        min-height: 0px;
+      }
+    }
+  }
+}
+.main-cele-div {
+  height: 430px;
+  background-color: gray;
+  border-radius: 8px;
+  position: relative;
+  .cardceleb-div-5 {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    width: 100%;
+    //   max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 430px;
+    margin-right: 20px;
+    // background-color: rgb(194, 59, 59);
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 44.28%, #000000 100%),
+      gray url("../../../public/client5.svg");
+    background-position: top;
+    // background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .cardceleb-name {
+      margin-top: 50px;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 26.63px;
+      text-align: left;
+      color: #fff;
+    }
+    .cardceleb-desc {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: left;
+      color: #fff;
+      min-height: 88px;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      @include midmobile {
+        min-height: 0px;
+      }
+    }
+  }
+}
+.carouselItem {
+  // padding-right: 40px;
+  padding: 0 6px 25px 6px;
+  // padding-bottom: 22px;
+}
+// .card-wrapper {
+//   // border: 2px solid black;
+//   max-width: 400px;
+//   margin-right: 25px;
+//   @include desktopxtralarge{
+//     max-width: 100%;
+//   }
+//   @include mobile{
+//     margin-right: unset;
+//   }
+//   .card-image {
+//     width: 100%;
+//   }
+//   .heading {
+//     margin-top: 22px;
+//     font-size: 22px;
+//     font-weight: 600;
+//     line-height: 26.63px;
+//     text-align: left;
+//     color: #142254;
+//   }
+//   .heading-description {
+//     margin-top: 16px;
+//     font-size: 14px;
+//     font-weight: 400;
+//     line-height: 22px;
+//     text-align: left;
+//     color: #6d6d6d;
+//   }
+//   .read-more-btn {
+//     margin-top: 20px;
+//     width: auto;
+//     padding: 10px 20px 10px 20px;
+//     border-radius: 8px;
+//     border: none;
+//     cursor: pointer;
+//     background: #142254;
+//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+//     transition: all 0.3s ease;
+//     text-transform: capitalize;
+//     font-size: 16px;
+//     color: white;
+//     font-weight: 600;
+//     line-height: 19.36px;
+//     letter-spacing: 0.5px;
+//   }
+// }
+// .custom-dot-list-style{
+//     color: blue !important;
+// }
+// .react-multi-carousel-dot.react-multi-carousel-dot--active button{
+//     background: blue !important;
+//     }

@@ -1,0 +1,218 @@
+@import "../../assets/style/mixin.scss";
+#main-div-contactus {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .map-img {
+    @include tablet {
+      width: 100%;
+      height: 200px;
+    }
+    @include mobile {
+      width: 100%;
+      height: 150px;
+    }
+  }
+  .main-section {
+    display: flex;
+    margin: 72px 148px;
+    gap: 40px;
+    @include desktoplargescreen {
+      margin: 72px 10px;
+    }
+    @include tablet {
+      display: block;
+      margin: 54px 10px;
+    }
+    @include mobile {
+      display: block;
+      margin: 54px 15px;
+    }
+    .right-sec {
+      width: 50%;
+
+      @include tablet {
+        width: 100%;
+      }
+      @include mobile {
+        width: 100%;
+      }
+      h1 {
+        color: $theme-heading;
+        @include tablet {
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 24px;
+        }
+        @include mobile {
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 24px;
+        }
+      }
+      .right-container {
+        // display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 30px;
+        margin-right: 40px;
+        grid-row-gap: 24px;
+        grid-column-gap: 45px;
+        @include tablet {
+          width: 100%;
+          display: block;
+          margin-top: 26px;
+        }
+        @include mobile {
+          width: 100%;
+          display: block;
+          margin-top: 26px;
+        }
+
+        // .first {
+        // margin-right: 40px;
+        .phone {
+          display: flex;
+          margin-bottom: 24px;
+
+          gap: 10px;
+          max-width: 253px;
+          width: 100%;
+          img {
+            margin-top: 12px;
+          }
+          @include tablet {
+            margin-bottom: 20px;
+          }
+          @include mobile {
+            margin-bottom: 20px;
+          }
+          .phone-sec {
+            display: flex;
+            flex-direction: column;
+            .topic {
+              color: $black-color;
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 42px;
+            }
+            .info {
+              color: $theme-gray;
+              font-size: 13px;
+              font-weight: 400;
+              line-height: 22px;
+              .titleSmall{
+                color: $theme-heading;
+                font-weight: 700;
+              }
+            }
+          }
+        }
+        // }
+        // .second {
+        //   .phone {
+        //     display: flex;
+        //     margin-bottom: 24px;
+        //     gap: 10px;
+        //     @include tablet {
+        //       margin-bottom: 20px;
+        //     }
+        //     @include mobile {
+        //       margin-bottom: 20px;
+        //     }
+        //     img {
+        //       margin-top: 12px;
+        //     }
+        //     .phone-sec {
+        //       display: flex;
+        //       flex-direction: column;
+        //       .topic {
+        //         font-size: 16px;
+        //         font-weight: 600;
+        //         line-height: 42px;
+        //         color: $black-color;
+        //       }
+        //       .info {
+        //         color: $theme-gray;
+        //         font-size: 14px;
+        //         font-weight: 400;
+        //         line-height: 22px;
+        //       }
+        //     }
+        //   }
+        // }
+      }
+    }
+    .left-sec {
+      width: 50%;
+
+      @include tablet {
+        width: 100%;
+        margin-top: 39px;
+      }
+      @include mobile {
+        width: 100%;
+        margin-top: 39px;
+      }
+      form {
+        width: 100%;
+      }
+      .first-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        @include tablet {
+          display: grid;
+          grid-template-columns: repeat(1, minmax(200px, 1fr));
+          gap: 0px;
+        }
+        @include mobile {
+          display: grid;
+          grid-template-columns: repeat(1, minmax(200px, 1fr));
+          gap: 0px;
+        }
+      }
+      .form-div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+        width: 100%;
+        .error {
+          color: red;
+        }
+        label {
+          color: $theme-heading;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 20px;
+          margin-bottom: 6px;
+        }
+        .input-div {
+          border: 1px solid $theme-border;
+          border-radius: 8px;
+          padding: 16px;
+          outline: none;
+          width: 100%;
+          &::placeholder{
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+
+          }
+        }
+      }
+      .submit-btn {
+        background-color: $theme-heading;
+        color: $White-color;
+        width: 100%;
+      }
+      .submit-btn:hover{
+        color: $theme-heading;
+      }
+    }
+  }
+}

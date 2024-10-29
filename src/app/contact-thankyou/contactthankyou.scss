@@ -1,0 +1,236 @@
+// Variables
+$primary-color: #4CAF50;
+$text-primary: #2d3748;
+$text-secondary: #4a5568;
+$text-tertiary: #718096;
+$bg-gradient-start: #f5f7fa;
+$bg-gradient-end: #e4e8eb;
+$card-bg: #f7fafc;
+$border-color: #e2e8f0;
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+
+// Mixins
+@mixin responsive($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+// Animations
+@keyframes scaleIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.thankyou-container {
+//   min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+//   background: linear-gradient(135deg, $bg-gradient-start 0%, $bg-gradient-end 100%);
+  padding: 2rem;
+  
+  @include responsive($breakpoint-sm) {
+    padding: 1rem;
+  }
+  
+  .content-wrapper {
+    max-width: 80%;
+    width: 100%;
+    background: white;
+    border-radius: 1.5rem;
+    padding: 4rem 3rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 0.6s ease-out;
+    
+    @include responsive($breakpoint-md) {
+      padding: 3rem 2rem;
+      max-width: 600px;
+    }
+    
+    @include responsive($breakpoint-sm) {
+      padding: 2rem 1.5rem;
+      border-radius: 1rem;
+    }
+  }
+  
+  .icon-container {
+    margin-bottom: 2.5rem;
+    
+    .checkmark-icon {
+      width: 100px;
+      height: 100px;
+      color: $primary-color;
+      animation: scaleIn 0.5s ease-out;
+      
+      @include responsive($breakpoint-md) {
+        width: 80px;
+        height: 80px;
+      }
+      
+      @include responsive($breakpoint-sm) {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+  
+  .text-content {
+    margin-bottom: 2rem;
+    
+    .title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: $text-primary;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+      
+      @include responsive($breakpoint-md) {
+        font-size: 1.5rem;
+      }
+      
+      @include responsive($breakpoint-sm) {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+    }
+    
+    .message {
+        font-size: 1rem;
+        color: $text-tertiary;
+        margin-bottom: 1rem;
+        
+        @include responsive($breakpoint-md) {
+          font-size: 1rem;
+        }
+        
+        @include responsive($breakpoint-sm) {
+          font-size: 0.70rem;
+        }
+      }
+      
+      .sub-message {
+        font-size: 1rem;
+        color: $text-tertiary;
+        
+        @include responsive($breakpoint-sm) {
+          font-size: 0.70rem;
+        }
+      }
+  }
+  
+  .card {
+    background: $card-bg;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    
+    @include responsive($breakpoint-sm) {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .card-title {
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: $text-primary;
+      margin-bottom: 1.5rem;
+      
+      @include responsive($breakpoint-sm) {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+    }
+    
+    .steps-list {
+      list-style: none;
+      padding: 0;
+      
+      li {
+        display: flex;
+        align-items: center;
+        padding: 1rem 0;
+        text-align: left;
+        
+        &:not(:last-child) {
+          border-bottom: 1px solid $border-color;
+        }
+        
+        .step-number {
+          background: $primary-color;
+          color: white;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 600;
+          margin-right: 1rem;
+          flex-shrink: 0;
+          
+          @include responsive($breakpoint-sm) {
+            width: 25px;
+            height: 25px;
+            font-size: 0.9rem;
+          }
+        }
+        
+        .step-text {
+          color: $text-secondary;
+          font-size: 1.1rem;
+          
+          @include responsive($breakpoint-sm) {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  
+  .contact-info {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    color: $text-tertiary;
+    
+    @include responsive($breakpoint-sm) {
+      font-size: 1rem;
+      margin-top: 1.5rem;
+      p{
+        font-size: 13px;
+      }
+    }
+    
+    .highlight {
+      color: $primary-color;
+      font-weight: 600;
+    }
+  }
+  .go-back-button-thankyou{
+    margin-top: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+}

@@ -1,0 +1,131 @@
+@import "../../../assets/style/mixin.scss";
+.main-div-blog {
+  // margin: 2rem 0;
+  padding: 20px 150px 20px 150px;
+  @include desktoplargescreen {
+    padding: 20px 10px 20px 10px;
+  }
+  @include mobile {
+    padding: 10px;
+  }
+  .blolg-metadata {
+    h1 {
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 48px;
+      color: #142254;
+      margin-bottom: 0.7rem;
+    }
+    .date-container {
+      display: flex;
+      align-items: center;
+      column-gap: 1rem;
+      > h3 {
+        // font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #142254;
+      }
+      > div {
+        display: flex;
+        align-items: center;
+        column-gap: 0.5rem;
+        span {
+          // font-family: "Inter";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19px;
+
+          color: #142254;
+        }
+        img {
+        }
+      }
+    }
+  }
+  .blog-content {
+    > img {
+      margin: 1.8rem 0 3rem 0;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+      max-height: 537px;
+      // aspect-ratio: 16/9;
+    }
+    .blog-data {
+      a {
+        text-decoration: underline;
+        // border-bottom:  1px solid  #102160;
+        // padding-bottom: ;
+        font-weight: 500;
+        color: #102160;
+      }
+      margin-bottom: 4rem;
+      p {
+        //comment me after dynamic blogs
+        margin: 0.6rem 0;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #6d6d6d;
+      }
+      img{
+        width: 100%;
+        margin: 10px 0;
+        object-fit: cover;
+        object-position: left;
+      }
+      ul,
+      ol,
+      li {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+
+        color: #6d6d6d;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      h7 {
+        // line-height: 42px;
+        margin: 1rem 0;
+        color: #142254;
+      }
+    }
+
+    .releted-posts {
+      > h4 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 42px;
+        color: #142254;
+      }
+      .releted-posts-list {
+        display: flex;
+        // display: grid;
+        // grid-template-columns: minmax(329px, 1fr);
+        // grid-auto-flow: column;
+        // max-width: 100%;
+        padding-bottom: 1rem;
+        column-gap: 1rem;
+        margin: 2rem 0;
+        justify-content: space-evenly;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scroll-snap-stop: normal;
+
+        > div {
+          max-width: 429px;
+        }
+      }
+    }
+  }
+}

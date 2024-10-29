@@ -1,0 +1,49 @@
+@import "../assets/style/mixin.scss";
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  // max-width: 1440px !important;
+  .children {
+    // padding: 0 40px;
+  }
+  .layout-children-div {
+    padding-top: 84px;
+    @include tablet {
+      padding-top: 70px;
+    }
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.outer-padding {
+  padding-left: 150px;
+  padding-right: 150px;
+  @include desktoplargescreen {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  @include mobile {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.modal-header {
+  border: none !important;
+  padding-bottom: unset !important;
+}
+.modal-body {
+  padding-top: unset !important;
+}
+.modal {
+  --bs-modal-zindex: 9999 !important;
+}
+
+// .main-div {
+//   z-index: 1; /* Ensure this is lower than the modal's z-index */
+// }

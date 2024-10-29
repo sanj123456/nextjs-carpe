@@ -1,0 +1,146 @@
+@import "../../../assets/style/mixin.scss";
+.bank {
+  margin: 2rem 0 3rem 0;
+  .bg-cover {
+    display: flex;
+
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 4rem 0;
+
+    background: linear-gradient(
+        0deg,
+        rgba(20, 34, 84, 0.12),
+        rgba(20, 34, 84, 0.12)
+      ),
+      url("../../../../public/Rectangle 55.svg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    text-transform: capitalize;
+    > a {
+      margin: 0 auto;
+    }
+    > h1 {
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 68px;
+      text-align: center;
+      color: #ffffff;
+      @include mobile {
+        font-size: 40px;
+        line-height: 50px;
+      }
+    }
+    .btn-Check-eligibility {
+      background-color: #56c5d0;
+    }
+  }
+
+  .bank-details {
+    margin: 1rem 0 1rem 0;
+    @include mobile {
+      margin: 0rem;
+    }
+    > img {
+      float: left;
+      @include tablet {
+        display: flex;
+        float: unset;
+        margin: 1rem auto;
+      }
+      object-fit: cover;
+      width: 100%;
+      max-width: 450px;
+      margin: 10px 20px 15px 0px;
+    }
+    > h1 {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 42px;
+      color: #142254;
+      margin: 0 0 1rem 0;
+      @include mobile {
+        font-size: 22px;
+        line-height: 27px;
+      }
+    }
+    > p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: #6d6d6d;
+      @include mobile {
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+  }
+  .bank-sub-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0 1rem 0;
+    @include desktoplargescreen {
+      float: left;
+    }
+    @include mobile {
+      gap: 0px;
+      margin: 0rem;
+    }
+    > h1 {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 42px;
+      color: #142254;
+      margin: 1rem 0;
+      @include mobile {
+        font-size: 22px;
+        line-height: 27px;
+      }
+    }
+    > p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: #6d6d6d;
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+  }
+  > .link {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 2rem auto;
+  }
+  .bank-feature-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.3rem;
+    display: grid;
+    column-gap: 0.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mobile {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    > li {
+      display: flex;
+      column-gap: 0.3rem;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #101828;
+      img {
+        height: 16px;
+      }
+    }
+  }
+}

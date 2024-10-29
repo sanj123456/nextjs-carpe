@@ -1,0 +1,170 @@
+@import "./variable.scss";
+/*mixins declared below*/
+
+//  upTo 425px breakpoint
+@mixin xxsMobile {
+  @media (max-width: #{$xxs-min-width}) {
+    @content;
+  }
+}
+@mixin maxWidth425 {
+  @media (max-width: #{$xxxxxs-max-width}) {
+    @content;
+  }
+}
+//  upTo 577px breakpoint
+@mixin smMobile {
+  @media (max-width: #{$xs-min-width}) {
+    @content;
+  }
+}
+@mixin midmobile {
+  @media (max-width: #{$xxs-max-width}) {
+    @content;
+  }
+}
+
+//upTo 475px breakpoint
+@mixin smallmobile {
+  @media (max-width: #{$xxxs-max-width}) {
+    @content;
+  }
+}
+//upto 320px breakpoint
+@mixin ultramallmobile {
+  @media (max-width: #{$xxxxs-max-width}) {
+    @content;
+  }
+}
+// upTo 767px breakpoint
+@mixin mobile {
+  @media (max-width: #{$xs-max-width}) {
+    @content;
+  }
+}
+//laptop screen 1024
+@mixin laptopscreen {
+  @media (max-width: #{$mdd-max-width}) {
+    @content;
+  }
+}
+@mixin BeyondTablet {
+  @media (min-width: #{$md-min-width}) {
+    @content;
+  }
+}
+// tablet view 991
+@mixin tablet {
+  @media (max-width: #{$sm-max-width}) {
+    @content;
+  }
+}
+//max-1440px
+@mixin midlarge {
+  @media (max-width:#{$lg-max-width}) {
+    @content;
+  }
+}
+// from 767px - 1200px
+@mixin tabletNew {
+  @media (min-width: #{$sm-min-width}) and (max-width:#{$md-max-width}) {
+    @content;
+  }
+}
+
+@mixin desktopMed {
+  @media (min-width: #{$lg-min-width}) and (max-width:#{$lg-max-width}) {
+    @content;
+  }
+}
+@mixin desktopsmall {
+  @media (max-width: #{$md-max-width}) {
+    @content;
+  }
+}
+// 1200px
+@mixin desktop {
+  @media (min-width: #{$lg-min-width}) {
+    @content;
+  }
+}
+// upto 1200px
+@mixin till-desktop {
+  @media (max-width: #{$xmd-max-width}) {
+    @content;
+  }
+}
+// upt0 1400px
+@mixin till-1440 {
+  @media (max-width: #{$lgg-max-width}) {
+    @content;
+  }
+}
+//from 320 -360
+@mixin small-mobile-device {
+  @media (min-width: #{$xxxxs-min-width}) and (max-width:#{$xxxxs-max-width} ) {
+    @content;
+  }
+}
+// 1440px breakpoint
+@mixin desktoplarge {
+  @media (min-width: #{$xlg-min-width}) and (max-width:#{$xxlg-max-width}) {
+    @content;
+  }
+}
+
+//1440px and above
+@mixin desktoplargescreen {
+  @media (min-width: #{$xlg-min-width}) {
+    @content;
+  }
+}
+
+// extra large desktops
+@mixin desktopxtralarge {
+  @media (min-width: #{$xxlg-min-width}) {
+    @content;
+  }
+}
+// extra extra large desktops 1920
+@mixin desktopxxtralarge {
+  @media (min-width: #{$xxlg-max-width}) {
+    @content;
+  }
+}
+//largee screen
+@mixin largescreen {
+  @media (max-width: #{$xlg-max-width}) {
+    @content;
+  }
+}
+@mixin largerscreen {
+  @media (max-width: #{$xxxlg-max-width}) {
+    @content;
+  }
+}
+@mixin mediumScreen{
+  @media (max-width: #{$xxxlg-max-width}) {
+    @content;
+  }
+}
+
+//***** all the font sizes *****//
+// font mixin creation
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin error {
+  text-align: left;
+  color: red;
+  font-size: 12px;
+}
+// font mixins
+@mixin poppins-font($font-weight, $size, $line-height: 1rem) {
+  font-weight: $font-weight;
+  font-size: $size;
+  line-height: $line-height;
+}

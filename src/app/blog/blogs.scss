@@ -1,0 +1,80 @@
+@import "../../assets/style/mixin.scss";
+#main-div-blogs {
+  .main-padding {
+    padding: 100px 150px 100px 150px;
+    @include desktoplargescreen {
+      padding: 100px 10px 100px 10px;
+    }
+    @include mobile {
+      padding: 20px 10px 20px 10px;
+    }
+  }
+  .bg-cover {
+    display: flex;
+
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 4rem 0;
+
+    background: linear-gradient(
+        0deg,
+        rgba(20, 34, 84, 0.10),
+        rgba(20, 34, 84, 0.10)
+      ),
+      url("../../../public/Rectangle 55.svg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    text-transform: capitalize;
+
+    /* Rectangle 1 */
+
+    h1 {
+      /* Get used car loan in Prahlad Nagar, Ahmedabad */
+
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 68px;
+      text-align: start;
+
+      color: #ffffff;
+      @include mobile{
+        font-size: 40px;
+        line-height: 50px;
+      }
+    }
+  }
+
+  .blogs-list-container {
+    display: grid;
+    // margin: 2rem 0;
+    // outline: 1px solid;
+    grid-template-columns: repeat(3, minmax(400px, 1fr));
+    // column-gap: 1.4rem;
+    grid-row-gap: 55px;
+    gap: 28px;
+    // row-gap: 2rem;
+    //   justify-content: space-around;
+    justify-items: center;
+    @include midlarge {
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    }
+    @include laptopscreen {
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+
+    @include tablet {
+      >div{
+    //  max-width:   360px;
+      }
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @include mobile {
+      padding: 20px 10px;
+    }
+  }
+}

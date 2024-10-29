@@ -1,0 +1,98 @@
+ @import "../../assets/style/mixin.scss";
+ .our-blog {
+    // padding: 0 150px;
+    margin-top: 60px;
+    // text-align: center;
+    @include tablet {
+      padding: 10px;
+      margin-top: 40px;
+    }
+    @include mobile {
+      padding: 10px;
+      margin-top: 0px;
+    }
+    .blog-heading-wrapper {
+      text-align: center;
+      @include mobile {
+        margin-top: 20px;
+      }
+    }
+    .our-blog-heading {
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 42px;
+      color: #142254;
+    }
+    .cards-wrapper {
+      // text-align: center;
+    //   padding: 0px 50px;
+      margin-top: 20px;
+      @include tablet {
+        padding: 0px 10px;
+        margin-top: 0px;
+      }
+      @include mobile {
+        padding: 0px 10px;
+        margin-top: 0px;
+      }
+      // text-align: unset;
+    }
+    .view-all-div-blog {
+      margin-bottom: 83px;
+      text-align: center;
+      @include mobile {
+        margin-bottom: 38px;
+      }
+      .view-all-btn-blog {
+        margin-top: 20px;
+        width: auto;
+        // padding: 10px 20px 10px 20px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        background: #142254;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        text-transform: capitalize;
+        font-size: 16px;
+        color: white;
+        font-weight: 600;
+        line-height: 19.36px;
+        letter-spacing: 0.5px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: #fff;
+          top: 0;
+          left: 0;
+          z-index: -2;
+          transform: scaleX(0);
+          transition: 0.5s ease-in-out;
+        }
+
+        &:hover::after {
+          transform: scale(1);
+        }
+
+        &:hover {
+          color: #142254;
+        }
+
+        width: auto;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @media only screen and (max-width: 646px) {
+          .view-all-btn-blog {
+            display: none;
+          }
+        }
+      }
+    }
+  }

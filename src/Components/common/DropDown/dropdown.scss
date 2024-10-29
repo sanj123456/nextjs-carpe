@@ -1,0 +1,55 @@
+@import "../../../assets/style/mixin.scss";
+#dropdownn {
+  position: relative;
+  z-index: 999;
+  .dropdown-containerr {
+    width: 100%;
+    background-color: #142254;
+    // box-shadow: 2px 2px 10px 2px #8b8a8a93;
+    position: absolute;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: unset !important;
+    @include laptopscreen {
+      margin-top: 1rem;
+      position: unset;
+    }
+    min-width: max-content;
+    border-radius: 8px;
+
+    li {
+      color: $White-color;
+      background-color: #142254;
+      margin: unset !important;
+      padding: unset !important;
+      @include tablet {
+        color: #142254;
+        background-color: $White-color;
+      }
+      @include mobile {
+        color: #142254;
+        background-color: $White-color;
+      }
+      .link-wrapper {
+        padding: 8px 16px;
+        display: flex;
+        align-items: start;
+      }
+
+      &:first-child {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+
+      &:last-child {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+
+      &:hover {
+        background-color: #56c5d0;
+      }
+    }
+  }
+}

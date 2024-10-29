@@ -1,0 +1,83 @@
+@import "../../assets/style/mixin.scss";
+.Carousal-content-wrapper {
+  padding: 45px 150px 0px 150px;
+  background: linear-gradient(to bottom, #56c5d0 50%, #ffffff 50%);
+  @include tablet {
+    padding: 10px;
+    background: linear-gradient(to bottom, #56c5d0 60%, #ffffff 50%);
+  }
+  @include mobile {
+    padding: 10px;
+    background: linear-gradient(to bottom, #56c5d0 58%, #ffffff 50%);
+  }
+  @include midmobile {
+    background: linear-gradient(to bottom, #56c5d0 62%, #ffffff 50%);
+  }
+  .text-carousal {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      width: unset;
+      margin-top: 31px;
+    }
+    .text-carousal-para1 {
+      width: 30%;
+      @include till-desktop {
+        width: 35%;
+      }
+      @include mobile {
+        width: unset;
+      }
+      .numbers {
+        font-weight: 900;
+        font-size: 70.56px;
+        line-height: 85.4px;
+        color: #142254;
+        @include mobile {
+          text-align: center;
+        }
+      }
+      .happy-customers {
+        font-size: 32.54px;
+        line-height: 39.39px;
+        font-weight: 600;
+        color: #142254;
+      }
+    }
+    .text-carousal-para2 {
+      width: 70%;
+      @include till-desktop {
+        width: 65%;
+      }
+      @include mobile {
+        width: unset;
+      }
+      .paragraph-text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 38px;
+        color: #142254;
+        @include mobile{
+          text-align: center;
+        }
+      }
+    }
+  }
+  .carousal-div {
+    position: relative;
+    margin-top: 43.5px;
+  }
+}
+
+.carousal-div .react-multi-carousel-dot--active button {
+  background-color: #142254 !important;
+}
+.carousal-div .react-multi-carousel-dot button {
+  border: none !important;
+}

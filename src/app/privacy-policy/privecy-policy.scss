@@ -1,0 +1,63 @@
+@import "../../assets/style/mixin.scss";
+#main-div-privecy-policy {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 21px 150px 60px 150px;
+  // padding-top: 2rem;
+  // padding-bottom: 2rem;
+  @include desktoplargescreen {
+    padding: 21px 10px 60px 10px;
+  }
+  @include tablet {
+    padding: 20px;
+    gap: 0.6rem;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    @include mobile {
+      gap: 0.3rem;
+    }
+    .heading {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 42px;
+      color: #142254;
+      @include mobile {
+        font-size: 22px;
+        line-height: 27px;
+      }
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: #6d6d6d;
+      @include mobile {
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+    ul {
+      li {
+        list-style: disc;
+        margin-left: 26px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: #6d6d6d;
+        @include mobile {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
+    span {
+      @include poppins-font(600, 16px, 32px);
+      color: $theme-heading;
+      cursor: pointer;
+    }
+  }
+}

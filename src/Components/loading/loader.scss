@@ -1,0 +1,37 @@
+// /* HTML: <div class="loader"></div> */
+// .loader {
+//     width: fit-content;
+//     font-weight: bold;
+//     font-family: monospace;
+//     font-size: 30px;
+//     background: radial-gradient(circle closest-side,#000 94%,#0000) right/calc(200% - 1em) 100%;
+//     animation: l24 1s infinite alternate linear;
+//   }
+//   .loader::before {
+//     content: "Loading...";
+//     line-height: 1em;
+//     color: #0000;
+//     background: inherit;
+//     background-image: radial-gradient(circle closest-side,#fff 94%,#000);
+//     -webkit-background-clip:text;
+//             background-clip:text;
+//   }
+  
+//   @keyframes l24{
+//     100%{background-position: left}
+//   }
+
+.loader{
+    // background:red;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+     img{
+        width: 50px;
+        width: 50px;
+        filter: invert(14%) sepia(88%) saturate(806%) hue-rotate(197deg) brightness(88%) contrast(103%);
+     }
+}

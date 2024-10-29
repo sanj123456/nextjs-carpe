@@ -1,0 +1,46 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+  button {
+    display: flex;
+    padding: 0.5rem 1rem;
+    aspect-ratio: 1/1;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid #c8c8c8;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    &:disabled {
+      background-color: #c8c8c8;
+    }
+  }
+  .currunt-page {
+    background-color: #142254;
+    color: #fff;
+  }
+
+  .other-page {
+    background-color: #fff;
+    color: #142254;
+    &:hover {
+      background-color: #617ef035;
+    }
+  }
+
+  .dots {
+    text-align: center;
+    letter-spacing: 0.5px;
+  }
+  .page-change-btn {
+    background-color: #56c5d0;
+  }
+}

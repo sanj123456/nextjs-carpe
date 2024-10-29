@@ -1,0 +1,169 @@
+@import "../../assets/style/mixin.scss";
+footer {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  .check-eligibility-footer {
+    display: flex;
+    background-color: #56c5d0;
+    row-gap: 2rem;
+    padding: 35px 150px 35px 150px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    @include tablet{
+      padding: 35px 46px 35px 46px;
+    }
+    @include desktoplargescreen {
+      padding: 35px 10px 35px 10px;
+    }
+    @include mobile {
+      justify-content: center;
+      padding: 35px 10px;
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+      row-gap: 0.563rem;
+      justify-content: center;
+
+      .looking-for-cash {
+        text-wrap: nowrap;
+        color: $theme-heading;
+        @include poppins-font(700, 2rem, 1.375rem);
+        @include mobile {
+          text-align: center;
+          @include poppins-font(700, 1.25rem, 1.375);
+          text-wrap: wrap;
+        }
+      }
+      p {
+        color: #142254;
+        @include poppins-font(500, 1.125rem, 2.125rem);
+        @include mobile {
+          text-align: center;
+          @include poppins-font(500, 1.125rem, 1.313rem);
+        }
+      }
+    }
+  }
+
+  .info-footer {
+    color: white;
+    background-color: #142254;
+    display: flex;
+    width: 100%;
+    padding: 45px 150px 30px 150px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2.375rem;
+    align-items: center;
+    @include tablet{
+      padding: 45px 46px 30px 46px;
+    }
+    @include desktoplargescreen {
+      padding: 45px 10px 30px 10px;
+    }
+    @include mobile {
+      // justify-content: center;
+      padding: 36px 20px;
+    }
+    .car-info-left {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      justify-content: flex-start;
+      align-items: flex-start;
+      max-width: 400px;
+      // img {
+      //   height: 74px;
+      // }
+      p {
+        @include poppins-font(400, 0.875rem, 1.375rem);
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2.75rem;
+      .common {
+        display: flex;
+        flex-direction: column;
+        @include mobile {
+          row-gap: 32px;
+        }
+        row-gap: 1.6rem;
+
+        .head-name {
+          @include poppins-font(600, 1.125rem, 1.375rem);
+        }
+        ul {
+          display: flex;
+          @include poppins-font(400, 0.875rem, 0rem);
+          row-gap: 2.125rem;
+
+          flex-direction: column;
+
+          li {
+            cursor: pointer;
+
+            &:hover {
+              color: #56c5d0;
+            }
+          }
+        }
+      }
+      .contect-us {
+        ul {
+          margin-top: -10px;
+          row-gap: 1.125rem;
+          li {
+            a {
+              display: flex;
+              align-items: center;
+              justify-content: start;
+              column-gap: 0.7rem;
+              .img-div {
+                // padding: 1rem;
+                // border-radius: 100%;
+                // height: 24px;
+                // aspect-ratio: 1/1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // background-color: white;
+                // @include mobile {
+                //   margin-right: 11px;
+                // }
+                img {
+                  // filter: invert(9%) sepia(83%) saturate(2138%)
+                  //   hue-rotate(219deg) brightness(95%) contrast(95%);
+                }
+              }
+            }
+          }
+        }
+
+        .mobile-number {
+          //  @include poppins-font(400, 0.875rem, 0rem);
+        }
+      }
+    }
+  }
+
+  .license-footer {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #081442;
+    height: 61px;
+    @include poppins-font(400, 14px, 34px);
+    color: #ffffff;
+  }
+}
